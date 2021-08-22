@@ -1,0 +1,10 @@
+version: "3.9"
+services: 
+    next_js:
+        build: .
+        container_name: nlw5react
+        command: yarn dev
+        volumes: 
+            - ./:/var/www/node/podcastr
+        ports: 
+            - "3000:3000"
